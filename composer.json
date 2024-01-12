@@ -1,0 +1,19 @@
+{
+    "name": "tv2regionerne/statamic-safeguard",
+    "autoload": {
+        "psr-4": {
+            "Tv2regionerne\\StatamicSafeguard\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Safeguard",
+            "description": "Statamic Safeguard addon"
+        },
+        "laravel": {
+            "providers": [
+                "Tv2regionerne\\StatamicSafeguard\\ServiceProvider"
+            ]
+        }
+    }
+}
