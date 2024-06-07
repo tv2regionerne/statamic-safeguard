@@ -17,6 +17,10 @@ class User extends \Statamic\Auth\Eloquent\User
 
     public function permissions()
     {
+        if (in_array($this->email, config('statamic-safeguard.super'))) {
+            return parent::permissions();
+        }
+
         /** @var Collection $permissions */
         $permissions = $this->groups()->flatMap->roles()
             ->merge($this->roles())
