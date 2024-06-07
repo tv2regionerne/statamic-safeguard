@@ -5,6 +5,9 @@
             "Tv2regionerne\\StatamicSafeguard\\": "src"
         }
     },
+    "require": {
+        "statamic/cms": "^4.0 || ^5.0"
+    },
     "extra": {
         "statamic": {
             "name": "Statamic Safeguard",

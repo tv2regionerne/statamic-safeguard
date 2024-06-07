@@ -32,6 +32,6 @@ class User extends \Statamic\Auth\Eloquent\User
 
         return $permissions->filter(function ($permission) {
             return ! in_array($permission, config('statamic-safeguard.permissions.disallow'));
-        });
+        })->values();
     }
 }
