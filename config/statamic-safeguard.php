@@ -12,7 +12,7 @@ return [
      * Be aware that allowing supers, will bypass protection
      * which can lead to breaking changes in production!
      */
-    'super' => ['syda@tv2reg.dk'],
+    'super' => explode(',', env('STATAMIC_SAFEGUARD_SUPER_EMAILS', '')),
 
     /**
      * An array of permissions to disallow.
